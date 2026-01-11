@@ -1,127 +1,26 @@
-:root{
-  --neon:#00f6ff;
-  --card:rgba(10,10,10,0.9);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OX Game – Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-*{ box-sizing:border-box }
+<body>
 
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-family:system-ui,Arial;
-  background:#000;
-  color:#fff;
-}
+<div class="app">
+  <h2>🎮 OX Game</h2>
 
-.container{
-  width:95%;
-  max-width:520px;
-  background:var(--card);
-  padding:18px;
-  border-radius:14px;
-  border:1px solid rgba(0,246,255,.2);
-}
+  <div class="status" id="status">
+    Turn: <span class="x">X</span>
+  </div>
 
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+  <div class="board" id="board"></div>
 
-.title{
-  font-size:20px;
-  color:var(--neon);
-}
+  <button id="restart">Restart</button>
+</div>
 
-.controls{
-  display:flex;
-  gap:8px;
-}
-
-.mode-btn, select{
-  background:#000;
-  color:var(--neon);
-  border:1px solid var(--neon);
-  padding:6px 10px;
-  border-radius:8px;
-  cursor:pointer;
-}
-
-.mode-btn.active{
-  box-shadow:0 0 12px var(--neon);
-}
-
-.scoreboard{
-  display:flex;
-  justify-content:space-between;
-  margin:12px 0;
-}
-
-.score{
-  text-align:center;
-  color:var(--neon);
-}
-
-.btn-row{
-  display:flex;
-  justify-content:center;
-  gap:16px;
-  margin:14px 0;
-}
-
-button.emoji{
-  font-size:46px;
-  width:80px;
-  height:80px;
-  cursor:pointer;
-  background:#111;
-  border:1px solid var(--neon);
-  border-radius:12px;
-}
-
-.info{
-  text-align:center;
-  margin-bottom:10px;
-  color:#9fefff;
-}
-
-.history{
-  background:#061b1d;
-  padding:8px;
-  height:120px;
-  overflow:auto;
-  font-size:13px;
-}
-
-.reset{
-  margin-top:10px;
-  background:var(--neon);
-  color:#000;
-  border:none;
-  padding:8px 14px;
-  font-weight:bold;
-  border-radius:8px;
-  cursor:pointer;
-}
-
-#popup{
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%) scale(0);
-  background:#000;
-  color:var(--neon);
-  border:2px solid var(--neon);
-  padding:14px 18px;
-  border-radius:10px;
-  transition:.25s ease;
-  text-align:center;
-  z-index:999;
-}
-
-#popup.show{
-  transform:translate(-50%,-50%) scale(1);
-}
+<script src="script.js"></script>
+</body>
+</html>
