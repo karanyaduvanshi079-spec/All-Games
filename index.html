@@ -1,86 +1,54 @@
-:root{
-  --bg:#020617;
-  --card:#0f172a;
-  --x:#38bdf8;
-  --o:#fb7185;
-  --win:#22c55e;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Game Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-*{ box-sizing:border-box }
+<h1 class="title">🎮 PLAY GAMES 🎮</h1>
 
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:radial-gradient(circle,#020617,#000);
-  font-family:system-ui,Arial;
-  color:#fff;
-}
+<div class="carousel">
 
-.app{
-  background:var(--card);
-  padding:20px;
-  border-radius:16px;
-  width:320px;
-  text-align:center;
-  box-shadow:0 0 30px rgba(56,189,248,.25);
-}
+  <div class="card">
+    <a href="Dodge Boom/index.html">
+      <img src="boom.png" alt="Game 1">
+    </a>
+    <div class="label">Dodge Boom💣</div>
+  </div>
 
-h2{
-  margin:0 0 10px;
-}
+  <div class="card">
+    <a href="FoolBall/index.html">
+      <img src="ball.png" alt="Game 2">
+    </a>
+    <div class="label">FootBall⚽</div>
+  </div>
 
-.status{
-  margin-bottom:12px;
-  font-size:16px;
-}
+  <div class="card">
+    <a href="Mind Duel/index.html">
+      <img src="mind.png" alt="Game 3">
+    </a>
+    <div class="label">Mind Duel🧠</div>
+  </div>
 
-.status .x{ color:var(--x); }
-.status .o{ color:var(--o); }
+  <div class="card">
+    <a href="Rock paper/index.html">
+      <img src="rock.png" alt="Game 4">
+    </a>
+    <div class="label">Rock✊Paper🖐️</div>
+  </div>
 
-.board{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-  margin:14px 0;
-}
+  <div class="card">
+    <a href="Tic Tac Toe/index.html">
+      <img src="ox.png" alt="Game 5">
+    </a>
+    <div class="label">Tic⭕Tac✖️Toc</div>
+  </div>
 
-.cell{
-  aspect-ratio:1/1;
-  background:#020617;
-  border-radius:12px;
-  font-size:46px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-  transition:.2s;
-}
 
-.cell:hover{
-  background:#020617aa;
-}
 
-.cell.x{ color:var(--x); }
-.cell.o{ color:var(--o); }
-
-.cell.win{
-  background:var(--win);
-  color:#000;
-}
-
-button{
-  padding:8px 14px;
-  border-radius:10px;
-  border:none;
-  cursor:pointer;
-  font-weight:600;
-  background:#38bdf8;
-  color:#000;
-}
-
-button:hover{
-  background:#0ea5e9;
-}
+<script src="script.js"></script>
+</body>
+</html>
