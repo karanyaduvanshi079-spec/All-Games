@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Football – College Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+  <canvas id="game" width="800" height="500"></canvas>
+
+  <div id="controls">
+    <div class="ctrl-btn" onclick="togglePause()">⏸</div>
+    <div class="ctrl-btn" onclick="restartMatch()">⟳</div>
+  </div>
+</div>
+
+<div id="ui">
+  <div class="box">
+    <h2>Set Match Time (seconds)</h2>
+    <input id="timeInput" type="number" value="120">
+    <br><br>
+    <button onclick="startMatch()">Start Match</button>
+  </div>
+</div>
+
+<div id="goalPop"></div>
+
+<div id="overlay">
+  <div class="box">
+    <h1 id="result"></h1>
+    <p id="finalScore"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
