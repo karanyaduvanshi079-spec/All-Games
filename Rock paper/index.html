@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissors – Ultimate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="popup"></div>
+
+<div class="container">
+  <header>
+    <div class="title">Rock • Paper • Scissors</div>
+    <div class="controls">
+      <button id="modeSingle" class="mode-btn active">Single</button>
+      <button id="modeTwo" class="mode-btn">2P</button>
+      <select id="bestOf">
+        <option value="3">Best of 3</option>
+        <option value="5">Best of 5</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="scoreboard">
+    <div class="score">
+      <small id="leftLabel">Player</small>
+      <div id="leftVal">0</div>
+    </div>
+    <div class="score">
+      <small>Mode</small>
+      <div id="modeLabel">Single</div>
+    </div>
+    <div class="score">
+      <small id="rightLabel">Computer</small>
+      <div id="rightVal">0</div>
+    </div>
+  </div>
+
+  <div class="btn-row" id="buttonsRow">
+    <button class="emoji" data-choice="rock">✊</button>
+    <button class="emoji" data-choice="paper">🖐</button>
+    <button class="emoji" data-choice="scissors">✌</button>
+  </div>
+
+  <div class="info" id="infoText">
+    Choose Rock / Paper / Scissors (R / P / S)
+  </div>
+
+  <div class="history" id="historyBox">History...</div>
+
+  <button class="reset" id="resetBtn">RESET</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

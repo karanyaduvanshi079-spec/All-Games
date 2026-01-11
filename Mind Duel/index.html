@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Duel – Competitive Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <header>
+      <div class="badge">
+        Levels:
+        <select id="levelSelect">
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+        </select>
+      </div>
+
+      <div class="badge">
+        Turn: <span id="turn" class="turn blue">Player 1</span>
+      </div>
+
+      <div class="badge">
+        P1 <span id="p1" class="blue-text">0</span> |
+        P2 <span id="p2" class="red-text">0</span>
+      </div>
+    </header>
+
+    <div id="board" class="board"></div>
+
+    <div class="footer">
+      <button id="restart">Restart</button>
+      <div id="winner" class="winner"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
