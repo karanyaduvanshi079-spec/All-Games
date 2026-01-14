@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Game Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <style> 
+  *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:#070707;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:white;
+}
+
+.title{
+  font-size:3rem;
+  margin-bottom:40px;
+  text-shadow:0 0 25px cyan;
+}
+
+.carousel{
+  display:flex;
+  flex-wrap:wrap;
+  gap:40px;
+  justify-content:center;
+  max-width:900px;
+}
+
+.card{
+  width:200px;
+  background:#0f0f0f;
+  border-radius:25px;
+  cursor:pointer;
+  transition:0.4s ease;
+  overflow:hidden;
+  box-shadow:
+    0 0 20px #00f6ff,
+    0 0 40px rgba(255,0,255,0.4);
+}
+
+.card:hover{
+  transform:scale(1.12);
+  box-shadow:
+    0 0 30px cyan,
+    0 0 70px magenta,
+    0 0 120px blue;
+}
+
+.card.active{
+  box-shadow:
+    0 0 40px cyan,
+    0 0 90px magenta,
+    0 0 150px blue;
+}
+
+.card a{
+  display:block;
+  width:100%;
+  height:160px;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.label{
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.1rem;
+  font-weight:600;
+  text-shadow:0 0 10px cyan;
+}
+  </style>
+<body>
+
+<h1 class="title">🎮 PLAY GAMES 🎮</h1>
+
+<div class="carousel">
+
+  <div class="card">
+    <a href="Dodge Boom/index.html">
+      <img src="boom.png" alt="Game 1">
+    </a>
+    <div class="label">Dodge Boom💣</div>
+  </div>
+
+  <div class="card">
+    <a href="FoolBall/index.html">
+      <img src="ball.png" alt="Game 2">
+    </a>
+    <div class="label">FootBall⚽</div>
+  </div>
+
+  <div class="card">
+    <a href="Mind Duel/index.html">
+      <img src="mind.png" alt="Game 3">
+    </a>
+    <div class="label">Mind Duel🧠</div>
+  </div>
+
+  <div class="card">
+    <a href="Rock paper/index.html">
+      <img src="rock.png" alt="Game 4">
+    </a>
+    <div class="label">Rock✊Paper🖐️</div>
+  </div>
+
+  <div class="card">
+    <a href="Tic Tac Toe/index.html">
+      <img src="ox.png" alt="Game 5">
+    </a>
+    <div class="label">Tic⭕Tac✖️Toc</div>
+  </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
